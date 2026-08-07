@@ -1,2 +1,2 @@
 # Equilizer
-IES Hackathon 2026
+IES Hackathon 2026.
