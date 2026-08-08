@@ -1,0 +1,75 @@
+{
+  "job_id": "5f605185-0200-43e9-90eb-08aa867c1297",
+  "filename": "Screen Recording 2026-08-08 081316.mp4",
+  "analysis": {
+    "final_score": 0.5304,
+    "verdict": "DEEPFAKE",
+    "confidence": 0.534,
+    "summary": [
+      "Media classified as DEEPFAKE with 53% likelihood.",
+      "[Face Analysis Agent] Analyzed 7 video frames in the frequency domain.",
+      "[Face Analysis Agent] High-frequency FFT Spectral Magnitude: 131.7",
+      "[Face Analysis Agent] Status: High-frequency synthetic grid artifacts detected.",
+      "[Audio Analysis Agent] No audio track present in uploaded media.",
+      "[Lip Sync Agent] Lip-sync analysis requires both video frames and audio track.",
+      "[Motion Analysis Agent] Natural eye-blink patterns and smooth head motion transitions observed.",
+      "[Metadata Analysis Agent] Container format: .mp4",
+      "[Metadata Analysis Agent] Standard video container. No explicit AI-generator watermark signatures found in headers."
+    ],
+    "agent_breakdown": [
+      {
+        "agent_name": "Face Analysis Agent",
+        "score": 0.85,
+        "verdict": "DEEPFAKE",
+        "confidence": 0.75,
+        "details": [
+          "Analyzed 7 video frames in the frequency domain.",
+          "High-frequency FFT Spectral Magnitude: 131.7",
+          "Status: High-frequency synthetic grid artifacts detected."
+        ],
+        "error": null
+      },
+      {
+        "agent_name": "Audio Analysis Agent",
+        "score": 0.0,
+        "verdict": "REAL",
+        "confidence": 0.1,
+        "details": [
+          "No audio track present in uploaded media."
+        ],
+        "error": null
+      },
+      {
+        "agent_name": "Lip Sync Agent",
+        "score": 0.0,
+        "verdict": "REAL",
+        "confidence": 0.1,
+        "details": [
+          "Lip-sync analysis requires both video frames and audio track."
+        ],
+        "error": null
+      },
+      {
+        "agent_name": "Motion Analysis Agent",
+        "score": 0.2,
+        "verdict": "REAL",
+        "confidence": 0.82,
+        "details": [
+          "Natural eye-blink patterns and smooth head motion transitions observed."
+        ],
+        "error": null
+      },
+      {
+        "agent_name": "Metadata Analysis Agent",
+        "score": 0.1,
+        "verdict": "REAL",
+        "confidence": 0.9,
+        "details": [
+          "Container format: .mp4",
+          "Standard video container. No explicit AI-generator watermark signatures found in headers."
+        ],
+        "error": null
+      }
+    ]
+  }
+}

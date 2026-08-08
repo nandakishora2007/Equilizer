@@ -1,0 +1,68 @@
+{
+  "job_id": "72b05f7c-a94e-48d4-af31-ddb51c2f5d03",
+  "filename": "Screen Recording 2026-08-08 081316.mp4",
+  "analysis": {
+    "final_score": 0.1366,
+    "verdict": "REAL",
+    "confidence": 0.48,
+    "summary": [
+      "Media classified as REAL with 86% authenticity likelihood.",
+      "[Audio Analysis Agent] No audio track present in uploaded media.",
+      "[Lip Sync Agent] Lip-sync analysis requires both video frames and audio track.",
+      "[Motion Analysis Agent] Natural eye-blink patterns and smooth head motion transitions observed.",
+      "[Metadata Analysis Agent] Container format: .mp4",
+      "[Metadata Analysis Agent] Standard video container. No explicit AI-generator watermark signatures found in headers."
+    ],
+    "agent_breakdown": [
+      {
+        "agent_name": "Face Analysis Agent",
+        "score": 0.0,
+        "verdict": "UNKNOWN",
+        "confidence": 0.0,
+        "details": [],
+        "error": "Uncaught agent exception: module 'cv2' has no attribute 'CascadeClassifier'"
+      },
+      {
+        "agent_name": "Audio Analysis Agent",
+        "score": 0.0,
+        "verdict": "REAL",
+        "confidence": 0.1,
+        "details": [
+          "No audio track present in uploaded media."
+        ],
+        "error": null
+      },
+      {
+        "agent_name": "Lip Sync Agent",
+        "score": 0.0,
+        "verdict": "REAL",
+        "confidence": 0.1,
+        "details": [
+          "Lip-sync analysis requires both video frames and audio track."
+        ],
+        "error": null
+      },
+      {
+        "agent_name": "Motion Analysis Agent",
+        "score": 0.2,
+        "verdict": "REAL",
+        "confidence": 0.82,
+        "details": [
+          "Natural eye-blink patterns and smooth head motion transitions observed."
+        ],
+        "error": null
+      },
+      {
+        "agent_name": "Metadata Analysis Agent",
+        "score": 0.1,
+        "verdict": "REAL",
+        "confidence": 0.9,
+        "details": [
+          "Container format: .mp4",
+          "Standard video container. No explicit AI-generator watermark signatures found in headers."
+        ],
+        "error": null
+      }
+    ]
+  }
+}

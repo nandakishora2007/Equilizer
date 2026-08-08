@@ -1,0 +1,575 @@
+2026-08-08 05:41:31 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 05:41:31 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 05:43:00 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Lip Sync Agent
+2026-08-08 05:43:00 | WARNING  | deepfake_agentic:_load_model:25 - [Lip Sync Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 05:43:01 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Motion Analysis Agent
+2026-08-08 05:43:01 | WARNING  | deepfake_agentic:_load_model:25 - [Motion Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 05:43:01 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 05:52:23 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 05:52:23 | WARNING  | deepfake_agentic:_load_model:28 - [Face Analysis Agent] Model path not provided or found. Running in heuristic/mock fallback mode.
+2026-08-08 05:52:23 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 05:52:23 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 05:52:23 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Lip Sync Agent
+2026-08-08 05:52:23 | WARNING  | deepfake_agentic:_load_model:25 - [Lip Sync Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 05:52:23 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Motion Analysis Agent
+2026-08-08 05:52:23 | WARNING  | deepfake_agentic:_load_model:25 - [Motion Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 05:52:23 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 05:52:23 | INFO     | deepfake_agentic:analyze_media:50 - [Coordinator] Dispatching agents for parallel execution...
+2026-08-08 05:52:23 | WARNING  | deepfake_agentic:aggregate:46 - [Fusion] Skipping Face Analysis Agent due to error: Missing frames
+2026-08-08 05:52:23 | INFO     | deepfake_agentic:aggregate:86 - [Fusion] Aggregated Verdict: REAL (Score: 0.0, Conf: 0.125)
+2026-08-08 05:57:29 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 05:57:29 | WARNING  | deepfake_agentic:_load_model:28 - [Face Analysis Agent] Model path not provided or found. Running in heuristic/mock fallback mode.
+2026-08-08 05:57:29 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 05:57:29 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 05:57:29 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Lip Sync Agent
+2026-08-08 05:57:29 | WARNING  | deepfake_agentic:_load_model:25 - [Lip Sync Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 05:57:29 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Motion Analysis Agent
+2026-08-08 05:57:29 | WARNING  | deepfake_agentic:_load_model:25 - [Motion Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 05:57:29 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 05:57:29 | INFO     | deepfake_agentic:<module>:41 - Starting Equilizer FastAPI server on http://127.0.0.1:8000
+2026-08-08 05:57:30 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 05:57:30 | WARNING  | deepfake_agentic:_load_model:28 - [Face Analysis Agent] Model path not provided or found. Running in heuristic/mock fallback mode.
+2026-08-08 05:57:30 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 05:57:30 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 05:57:30 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Lip Sync Agent
+2026-08-08 05:57:30 | WARNING  | deepfake_agentic:_load_model:25 - [Lip Sync Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 05:57:30 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Motion Analysis Agent
+2026-08-08 05:57:30 | WARNING  | deepfake_agentic:_load_model:25 - [Motion Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 05:57:30 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 06:52:33 | WARNING  | deepfake_agentic:analyze_media:116 - Validation error during upload: Unsupported file type: .png
+2026-08-08 06:52:40 | WARNING  | deepfake_agentic:analyze_media:116 - Validation error during upload: Unsupported file type: .png
+2026-08-08 06:57:37 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 06:57:37 | WARNING  | deepfake_agentic:_load_model:28 - [Face Analysis Agent] Model path not provided or found. Running in heuristic/mock fallback mode.
+2026-08-08 06:57:37 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 06:57:37 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 06:57:37 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Lip Sync Agent
+2026-08-08 06:57:37 | WARNING  | deepfake_agentic:_load_model:25 - [Lip Sync Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 06:57:37 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Motion Analysis Agent
+2026-08-08 06:57:37 | WARNING  | deepfake_agentic:_load_model:25 - [Motion Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 06:57:37 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 06:58:06 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 06:58:06 | WARNING  | deepfake_agentic:_load_model:28 - [Face Analysis Agent] Model path not provided or found. Running in heuristic/mock fallback mode.
+2026-08-08 06:58:06 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 06:58:06 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 06:58:06 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Lip Sync Agent
+2026-08-08 06:58:06 | WARNING  | deepfake_agentic:_load_model:25 - [Lip Sync Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 06:58:06 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Motion Analysis Agent
+2026-08-08 06:58:06 | WARNING  | deepfake_agentic:_load_model:25 - [Motion Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 06:58:06 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 06:58:06 | INFO     | deepfake_agentic:<module>:99 - Starting Equilizer FastAPI server on http://127.0.0.1:8000
+2026-08-08 06:58:07 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 06:58:07 | WARNING  | deepfake_agentic:_load_model:28 - [Face Analysis Agent] Model path not provided or found. Running in heuristic/mock fallback mode.
+2026-08-08 06:58:07 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 06:58:07 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 06:58:07 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Lip Sync Agent
+2026-08-08 06:58:07 | WARNING  | deepfake_agentic:_load_model:25 - [Lip Sync Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 06:58:07 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Motion Analysis Agent
+2026-08-08 06:58:07 | WARNING  | deepfake_agentic:_load_model:25 - [Motion Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 06:58:07 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 06:58:47 | DEBUG    | deepfake_agentic:create_job_directory:88 - Created job directory: D:\apps\Equilizer\nandakishor\backend\uploads\db5b2620-d318-4cf9-bd12-a1fc25a410ea
+2026-08-08 06:58:47 | INFO     | deepfake_agentic:save_uploaded_stream:166 - Streamed upload saved | Job ID: db5b2620-d318-4cf9-bd12-a1fc25a410ea | Path: D:\apps\Equilizer\nandakishor\backend\uploads\db5b2620-d318-4cf9-bd12-a1fc25a410ea\source_media.mp4
+2026-08-08 06:58:47 | INFO     | deepfake_agentic:process:25 - Starting media processing for: source_media.mp4
+2026-08-08 06:58:54 | INFO     | deepfake_agentic:extract_frames:68 - Extracted 14 frames from source_media.mp4 (Total Frames: 734, Step: 55)
+2026-08-08 06:58:54 | WARNING  | deepfake_agentic:extract_audio_from_video:60 - Audio extraction via FFmpeg skipped or failed: [WinError 2] The system cannot find the file specified
+2026-08-08 06:58:54 | INFO     | deepfake_agentic:process:53 - Video processing finished | Frames: 14 | Has Audio: False
+2026-08-08 06:58:54 | INFO     | deepfake_agentic:analyze_media:50 - [Coordinator] Dispatching agents for parallel execution...
+2026-08-08 06:58:54 | INFO     | deepfake_agentic:analyze:46 - [Face Analysis Agent] Analyzing 14 frames for face artifacts...
+2026-08-08 06:58:54 | INFO     | deepfake_agentic:analyze:42 - [Motion Analysis Agent] Analyzing motion continuity across 14 frames...
+2026-08-08 06:58:54 | INFO     | deepfake_agentic:analyze:32 - [Metadata Analysis Agent] Inspecting container metadata for: source_media.mp4
+2026-08-08 06:58:54 | ERROR    | deepfake_agentic:_run_agent_async:33 - Execution error in Face Analysis Agent: module 'cv2' has no attribute 'CascadeClassifier'
+2026-08-08 06:58:54 | WARNING  | deepfake_agentic:aggregate:46 - [Fusion] Skipping Face Analysis Agent due to error: Uncaught agent exception: module 'cv2' has no attribute 'CascadeClassifier'
+2026-08-08 06:58:54 | INFO     | deepfake_agentic:aggregate:86 - [Fusion] Aggregated Verdict: REAL (Score: 0.1366, Conf: 0.48)
+2026-08-08 06:58:54 | INFO     | deepfake_agentic:analyze_media:108 - Report persisted successfully: D:\apps\Equilizer\nandakishor\backend\reports\db5b2620-d318-4cf9-bd12-a1fc25a410ea_report.json
+2026-08-08 06:58:54 | INFO     | deepfake_agentic:cleanup_job_directory:191 - Cleaned up job directory: D:\apps\Equilizer\nandakishor\backend\uploads\db5b2620-d318-4cf9-bd12-a1fc25a410ea
+2026-08-08 07:27:17 | DEBUG    | deepfake_agentic:create_job_directory:88 - Created job directory: D:\apps\Equilizer\nandakishor\backend\uploads\53c65691-8d35-4ffc-afe3-7fbc4c60d40b
+2026-08-08 07:27:17 | INFO     | deepfake_agentic:save_uploaded_stream:166 - Streamed upload saved | Job ID: 53c65691-8d35-4ffc-afe3-7fbc4c60d40b | Path: D:\apps\Equilizer\nandakishor\backend\uploads\53c65691-8d35-4ffc-afe3-7fbc4c60d40b\source_media.mp4
+2026-08-08 07:27:17 | INFO     | deepfake_agentic:process:25 - Starting media processing for: source_media.mp4
+2026-08-08 07:27:25 | INFO     | deepfake_agentic:extract_frames:68 - Extracted 14 frames from source_media.mp4 (Total Frames: 744, Step: 57)
+2026-08-08 07:27:25 | WARNING  | deepfake_agentic:extract_audio_from_video:60 - Audio extraction via FFmpeg skipped or failed: [WinError 2] The system cannot find the file specified
+2026-08-08 07:27:25 | INFO     | deepfake_agentic:process:53 - Video processing finished | Frames: 14 | Has Audio: False
+2026-08-08 07:27:25 | INFO     | deepfake_agentic:analyze_media:50 - [Coordinator] Dispatching agents for parallel execution...
+2026-08-08 07:27:25 | INFO     | deepfake_agentic:analyze:46 - [Face Analysis Agent] Analyzing 14 frames for face artifacts...
+2026-08-08 07:27:25 | INFO     | deepfake_agentic:analyze:42 - [Motion Analysis Agent] Analyzing motion continuity across 14 frames...
+2026-08-08 07:27:25 | INFO     | deepfake_agentic:analyze:32 - [Metadata Analysis Agent] Inspecting container metadata for: source_media.mp4
+2026-08-08 07:27:25 | ERROR    | deepfake_agentic:_run_agent_async:33 - Execution error in Face Analysis Agent: module 'cv2' has no attribute 'CascadeClassifier'
+2026-08-08 07:27:25 | WARNING  | deepfake_agentic:aggregate:46 - [Fusion] Skipping Face Analysis Agent due to error: Uncaught agent exception: module 'cv2' has no attribute 'CascadeClassifier'
+2026-08-08 07:27:25 | INFO     | deepfake_agentic:aggregate:86 - [Fusion] Aggregated Verdict: REAL (Score: 0.1366, Conf: 0.48)
+2026-08-08 07:27:25 | INFO     | deepfake_agentic:analyze_media:108 - Report persisted successfully: D:\apps\Equilizer\nandakishor\backend\reports\53c65691-8d35-4ffc-afe3-7fbc4c60d40b_report.json
+2026-08-08 07:27:25 | INFO     | deepfake_agentic:cleanup_job_directory:191 - Cleaned up job directory: D:\apps\Equilizer\nandakishor\backend\uploads\53c65691-8d35-4ffc-afe3-7fbc4c60d40b
+2026-08-08 07:38:05 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 07:38:05 | WARNING  | deepfake_agentic:_load_model:28 - [Face Analysis Agent] Model path not provided or found. Running in heuristic/mock fallback mode.
+2026-08-08 07:38:05 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 07:38:05 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 07:38:05 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Lip Sync Agent
+2026-08-08 07:38:05 | WARNING  | deepfake_agentic:_load_model:25 - [Lip Sync Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 07:38:05 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Motion Analysis Agent
+2026-08-08 07:38:05 | WARNING  | deepfake_agentic:_load_model:25 - [Motion Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 07:38:05 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 07:38:05 | INFO     | deepfake_agentic:<module>:99 - Starting Equilizer FastAPI server on http://127.0.0.1:8000
+2026-08-08 07:38:05 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 07:38:05 | WARNING  | deepfake_agentic:_load_model:28 - [Face Analysis Agent] Model path not provided or found. Running in heuristic/mock fallback mode.
+2026-08-08 07:38:05 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 07:38:05 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 07:38:05 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Lip Sync Agent
+2026-08-08 07:38:05 | WARNING  | deepfake_agentic:_load_model:25 - [Lip Sync Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 07:38:05 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Motion Analysis Agent
+2026-08-08 07:38:05 | WARNING  | deepfake_agentic:_load_model:25 - [Motion Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 07:38:05 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 07:38:25 | DEBUG    | deepfake_agentic:create_job_directory:88 - Created job directory: D:\apps\Equilizer\nandakishor\backend\uploads\e5c10d29-935f-4e68-906c-2106b7715e58
+2026-08-08 07:38:25 | INFO     | deepfake_agentic:save_uploaded_stream:166 - Streamed upload saved | Job ID: e5c10d29-935f-4e68-906c-2106b7715e58 | Path: D:\apps\Equilizer\nandakishor\backend\uploads\e5c10d29-935f-4e68-906c-2106b7715e58\source_media.mp4
+2026-08-08 07:38:25 | INFO     | deepfake_agentic:process:25 - Starting media processing for: source_media.mp4
+2026-08-08 07:38:31 | INFO     | deepfake_agentic:extract_frames:68 - Extracted 14 frames from source_media.mp4 (Total Frames: 734, Step: 55)
+2026-08-08 07:38:31 | WARNING  | deepfake_agentic:extract_audio_from_video:60 - Audio extraction via FFmpeg skipped or failed: [WinError 2] The system cannot find the file specified
+2026-08-08 07:38:31 | INFO     | deepfake_agentic:process:53 - Video processing finished | Frames: 14 | Has Audio: False
+2026-08-08 07:38:31 | INFO     | deepfake_agentic:analyze_media:50 - [Coordinator] Dispatching agents for parallel execution...
+2026-08-08 07:38:31 | INFO     | deepfake_agentic:analyze:46 - [Face Analysis Agent] Analyzing 14 frames for face artifacts...
+2026-08-08 07:38:31 | INFO     | deepfake_agentic:analyze:42 - [Motion Analysis Agent] Analyzing motion continuity across 14 frames...
+2026-08-08 07:38:31 | INFO     | deepfake_agentic:analyze:32 - [Metadata Analysis Agent] Inspecting container metadata for: source_media.mp4
+2026-08-08 07:38:31 | ERROR    | deepfake_agentic:_run_agent_async:33 - Execution error in Face Analysis Agent: module 'cv2' has no attribute 'CascadeClassifier'
+2026-08-08 07:38:31 | WARNING  | deepfake_agentic:aggregate:46 - [Fusion] Skipping Face Analysis Agent due to error: Uncaught agent exception: module 'cv2' has no attribute 'CascadeClassifier'
+2026-08-08 07:38:31 | INFO     | deepfake_agentic:aggregate:86 - [Fusion] Aggregated Verdict: REAL (Score: 0.1366, Conf: 0.48)
+2026-08-08 07:38:31 | INFO     | deepfake_agentic:analyze_media:108 - Report persisted successfully: D:\apps\Equilizer\nandakishor\backend\reports\e5c10d29-935f-4e68-906c-2106b7715e58_report.json
+2026-08-08 07:38:31 | INFO     | deepfake_agentic:cleanup_job_directory:191 - Cleaned up job directory: D:\apps\Equilizer\nandakishor\backend\uploads\e5c10d29-935f-4e68-906c-2106b7715e58
+2026-08-08 08:13:54 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 08:13:54 | WARNING  | deepfake_agentic:_load_model:28 - [Face Analysis Agent] Model path not provided or found. Running in heuristic/mock fallback mode.
+2026-08-08 08:13:54 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 08:13:54 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:13:54 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Lip Sync Agent
+2026-08-08 08:13:54 | WARNING  | deepfake_agentic:_load_model:25 - [Lip Sync Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:13:54 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Motion Analysis Agent
+2026-08-08 08:13:54 | WARNING  | deepfake_agentic:_load_model:25 - [Motion Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:13:54 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 08:13:54 | INFO     | deepfake_agentic:<module>:99 - Starting Equilizer FastAPI server on http://127.0.0.1:8000
+2026-08-08 08:13:54 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 08:13:54 | WARNING  | deepfake_agentic:_load_model:28 - [Face Analysis Agent] Model path not provided or found. Running in heuristic/mock fallback mode.
+2026-08-08 08:13:54 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 08:13:54 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:13:54 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Lip Sync Agent
+2026-08-08 08:13:54 | WARNING  | deepfake_agentic:_load_model:25 - [Lip Sync Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:13:54 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Motion Analysis Agent
+2026-08-08 08:13:54 | WARNING  | deepfake_agentic:_load_model:25 - [Motion Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:13:54 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 08:16:25 | DEBUG    | deepfake_agentic:create_job_directory:88 - Created job directory: D:\apps\Equilizer\nandakishor\backend\uploads\72b05f7c-a94e-48d4-af31-ddb51c2f5d03
+2026-08-08 08:16:25 | INFO     | deepfake_agentic:save_uploaded_stream:166 - Streamed upload saved | Job ID: 72b05f7c-a94e-48d4-af31-ddb51c2f5d03 | Path: D:\apps\Equilizer\nandakishor\backend\uploads\72b05f7c-a94e-48d4-af31-ddb51c2f5d03\source_media.mp4
+2026-08-08 08:16:25 | INFO     | deepfake_agentic:process:25 - Starting media processing for: source_media.mp4
+2026-08-08 08:16:27 | INFO     | deepfake_agentic:extract_frames:68 - Extracted 7 frames from source_media.mp4 (Total Frames: 205, Step: 30)
+2026-08-08 08:16:27 | WARNING  | deepfake_agentic:extract_audio_from_video:60 - Audio extraction via FFmpeg skipped or failed: [WinError 2] The system cannot find the file specified
+2026-08-08 08:16:27 | INFO     | deepfake_agentic:process:53 - Video processing finished | Frames: 7 | Has Audio: False
+2026-08-08 08:16:27 | INFO     | deepfake_agentic:analyze_media:50 - [Coordinator] Dispatching agents for parallel execution...
+2026-08-08 08:16:27 | INFO     | deepfake_agentic:analyze:46 - [Face Analysis Agent] Analyzing 7 frames for face artifacts...
+2026-08-08 08:16:27 | INFO     | deepfake_agentic:analyze:42 - [Motion Analysis Agent] Analyzing motion continuity across 7 frames...
+2026-08-08 08:16:27 | INFO     | deepfake_agentic:analyze:32 - [Metadata Analysis Agent] Inspecting container metadata for: source_media.mp4
+2026-08-08 08:16:27 | ERROR    | deepfake_agentic:_run_agent_async:33 - Execution error in Face Analysis Agent: module 'cv2' has no attribute 'CascadeClassifier'
+2026-08-08 08:16:27 | WARNING  | deepfake_agentic:aggregate:46 - [Fusion] Skipping Face Analysis Agent due to error: Uncaught agent exception: module 'cv2' has no attribute 'CascadeClassifier'
+2026-08-08 08:16:27 | INFO     | deepfake_agentic:aggregate:86 - [Fusion] Aggregated Verdict: REAL (Score: 0.1366, Conf: 0.48)
+2026-08-08 08:16:27 | INFO     | deepfake_agentic:analyze_media:108 - Report persisted successfully: D:\apps\Equilizer\nandakishor\backend\reports\72b05f7c-a94e-48d4-af31-ddb51c2f5d03_report.json
+2026-08-08 08:16:27 | INFO     | deepfake_agentic:cleanup_job_directory:191 - Cleaned up job directory: D:\apps\Equilizer\nandakishor\backend\uploads\72b05f7c-a94e-48d4-af31-ddb51c2f5d03
+2026-08-08 08:19:43 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 08:19:43 | WARNING  | deepfake_agentic:_load_model:28 - [Face Analysis Agent] Model path not provided or found. Running in heuristic/mock fallback mode.
+2026-08-08 08:19:43 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 08:19:43 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:19:43 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Lip Sync Agent
+2026-08-08 08:19:43 | WARNING  | deepfake_agentic:_load_model:25 - [Lip Sync Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:19:43 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Motion Analysis Agent
+2026-08-08 08:19:43 | WARNING  | deepfake_agentic:_load_model:25 - [Motion Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:19:43 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 08:19:52 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 08:19:52 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 08:19:52 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:19:52 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Lip Sync Agent
+2026-08-08 08:19:52 | WARNING  | deepfake_agentic:_load_model:25 - [Lip Sync Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:19:52 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Motion Analysis Agent
+2026-08-08 08:19:52 | WARNING  | deepfake_agentic:_load_model:25 - [Motion Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:19:52 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 08:20:05 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 08:20:05 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 08:20:05 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:20:05 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Lip Sync Agent
+2026-08-08 08:20:05 | WARNING  | deepfake_agentic:_load_model:25 - [Lip Sync Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:20:05 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Motion Analysis Agent
+2026-08-08 08:20:05 | WARNING  | deepfake_agentic:_load_model:25 - [Motion Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:20:05 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 08:20:05 | INFO     | deepfake_agentic:<module>:99 - Starting Equilizer FastAPI server on http://127.0.0.1:8000
+2026-08-08 08:20:05 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 08:20:05 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 08:20:05 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:20:05 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Lip Sync Agent
+2026-08-08 08:20:05 | WARNING  | deepfake_agentic:_load_model:25 - [Lip Sync Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:20:05 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Motion Analysis Agent
+2026-08-08 08:20:05 | WARNING  | deepfake_agentic:_load_model:25 - [Motion Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:20:05 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 08:20:19 | DEBUG    | deepfake_agentic:create_job_directory:88 - Created job directory: D:\apps\Equilizer\nandakishor\backend\uploads\96757e77-0b00-4cd5-806e-8925ad172706
+2026-08-08 08:20:19 | INFO     | deepfake_agentic:save_uploaded_stream:166 - Streamed upload saved | Job ID: 96757e77-0b00-4cd5-806e-8925ad172706 | Path: D:\apps\Equilizer\nandakishor\backend\uploads\96757e77-0b00-4cd5-806e-8925ad172706\source_media.mp4
+2026-08-08 08:20:19 | INFO     | deepfake_agentic:process:25 - Starting media processing for: source_media.mp4
+2026-08-08 08:20:20 | INFO     | deepfake_agentic:extract_frames:68 - Extracted 7 frames from source_media.mp4 (Total Frames: 205, Step: 30)
+2026-08-08 08:20:20 | WARNING  | deepfake_agentic:extract_audio_from_video:60 - Audio extraction via FFmpeg skipped or failed: [WinError 2] The system cannot find the file specified
+2026-08-08 08:20:20 | INFO     | deepfake_agentic:process:53 - Video processing finished | Frames: 7 | Has Audio: False
+2026-08-08 08:20:20 | INFO     | deepfake_agentic:analyze_media:50 - [Coordinator] Dispatching agents for parallel execution...
+2026-08-08 08:20:20 | INFO     | deepfake_agentic:analyze:135 - [Face Analysis Agent] Analyzing 7 frames for deepfake artifacts...
+2026-08-08 08:20:20 | INFO     | deepfake_agentic:analyze:42 - [Motion Analysis Agent] Analyzing motion continuity across 7 frames...
+2026-08-08 08:20:20 | INFO     | deepfake_agentic:analyze:32 - [Metadata Analysis Agent] Inspecting container metadata for: source_media.mp4
+2026-08-08 08:20:20 | ERROR    | deepfake_agentic:_run_agent_async:33 - Execution error in Face Analysis Agent: module 'cv2' has no attribute 'CascadeClassifier'
+2026-08-08 08:20:20 | WARNING  | deepfake_agentic:aggregate:46 - [Fusion] Skipping Face Analysis Agent due to error: Uncaught agent exception: module 'cv2' has no attribute 'CascadeClassifier'
+2026-08-08 08:20:20 | INFO     | deepfake_agentic:aggregate:86 - [Fusion] Aggregated Verdict: REAL (Score: 0.1366, Conf: 0.48)
+2026-08-08 08:20:20 | INFO     | deepfake_agentic:analyze_media:108 - Report persisted successfully: D:\apps\Equilizer\nandakishor\backend\reports\96757e77-0b00-4cd5-806e-8925ad172706_report.json
+2026-08-08 08:20:20 | INFO     | deepfake_agentic:cleanup_job_directory:191 - Cleaned up job directory: D:\apps\Equilizer\nandakishor\backend\uploads\96757e77-0b00-4cd5-806e-8925ad172706
+2026-08-08 08:21:29 | DEBUG    | deepfake_agentic:create_job_directory:88 - Created job directory: D:\apps\Equilizer\nandakishor\backend\uploads\05cd9856-ac0c-40cf-8070-1c435ca1d4bb
+2026-08-08 08:21:29 | INFO     | deepfake_agentic:save_uploaded_stream:166 - Streamed upload saved | Job ID: 05cd9856-ac0c-40cf-8070-1c435ca1d4bb | Path: D:\apps\Equilizer\nandakishor\backend\uploads\05cd9856-ac0c-40cf-8070-1c435ca1d4bb\source_media.mp4
+2026-08-08 08:21:29 | INFO     | deepfake_agentic:process:25 - Starting media processing for: source_media.mp4
+2026-08-08 08:21:34 | INFO     | deepfake_agentic:extract_frames:68 - Extracted 16 frames from source_media.mp4 (Total Frames: 456, Step: 30)
+2026-08-08 08:21:34 | WARNING  | deepfake_agentic:extract_audio_from_video:60 - Audio extraction via FFmpeg skipped or failed: [WinError 2] The system cannot find the file specified
+2026-08-08 08:21:34 | INFO     | deepfake_agentic:process:53 - Video processing finished | Frames: 16 | Has Audio: False
+2026-08-08 08:21:34 | INFO     | deepfake_agentic:analyze_media:50 - [Coordinator] Dispatching agents for parallel execution...
+2026-08-08 08:21:34 | INFO     | deepfake_agentic:analyze:135 - [Face Analysis Agent] Analyzing 16 frames for deepfake artifacts...
+2026-08-08 08:21:34 | INFO     | deepfake_agentic:analyze:42 - [Motion Analysis Agent] Analyzing motion continuity across 16 frames...
+2026-08-08 08:21:34 | INFO     | deepfake_agentic:analyze:32 - [Metadata Analysis Agent] Inspecting container metadata for: source_media.mp4
+2026-08-08 08:21:34 | ERROR    | deepfake_agentic:_run_agent_async:33 - Execution error in Face Analysis Agent: module 'cv2' has no attribute 'CascadeClassifier'
+2026-08-08 08:21:34 | WARNING  | deepfake_agentic:aggregate:46 - [Fusion] Skipping Face Analysis Agent due to error: Uncaught agent exception: module 'cv2' has no attribute 'CascadeClassifier'
+2026-08-08 08:21:34 | INFO     | deepfake_agentic:aggregate:86 - [Fusion] Aggregated Verdict: REAL (Score: 0.1366, Conf: 0.48)
+2026-08-08 08:21:34 | INFO     | deepfake_agentic:analyze_media:108 - Report persisted successfully: D:\apps\Equilizer\nandakishor\backend\reports\05cd9856-ac0c-40cf-8070-1c435ca1d4bb_report.json
+2026-08-08 08:21:34 | INFO     | deepfake_agentic:cleanup_job_directory:191 - Cleaned up job directory: D:\apps\Equilizer\nandakishor\backend\uploads\05cd9856-ac0c-40cf-8070-1c435ca1d4bb
+2026-08-08 08:21:47 | DEBUG    | deepfake_agentic:create_job_directory:88 - Created job directory: D:\apps\Equilizer\nandakishor\backend\uploads\ae78a367-5061-4b00-9996-44f959e547db
+2026-08-08 08:21:47 | INFO     | deepfake_agentic:save_uploaded_stream:166 - Streamed upload saved | Job ID: ae78a367-5061-4b00-9996-44f959e547db | Path: D:\apps\Equilizer\nandakishor\backend\uploads\ae78a367-5061-4b00-9996-44f959e547db\source_media.mp4
+2026-08-08 08:21:47 | INFO     | deepfake_agentic:process:25 - Starting media processing for: source_media.mp4
+2026-08-08 08:21:48 | INFO     | deepfake_agentic:extract_frames:68 - Extracted 7 frames from source_media.mp4 (Total Frames: 205, Step: 30)
+2026-08-08 08:21:48 | WARNING  | deepfake_agentic:extract_audio_from_video:60 - Audio extraction via FFmpeg skipped or failed: [WinError 2] The system cannot find the file specified
+2026-08-08 08:21:48 | INFO     | deepfake_agentic:process:53 - Video processing finished | Frames: 7 | Has Audio: False
+2026-08-08 08:21:48 | INFO     | deepfake_agentic:analyze_media:50 - [Coordinator] Dispatching agents for parallel execution...
+2026-08-08 08:21:48 | INFO     | deepfake_agentic:analyze:135 - [Face Analysis Agent] Analyzing 7 frames for deepfake artifacts...
+2026-08-08 08:21:48 | INFO     | deepfake_agentic:analyze:42 - [Motion Analysis Agent] Analyzing motion continuity across 7 frames...
+2026-08-08 08:21:48 | INFO     | deepfake_agentic:analyze:32 - [Metadata Analysis Agent] Inspecting container metadata for: source_media.mp4
+2026-08-08 08:21:48 | ERROR    | deepfake_agentic:_run_agent_async:33 - Execution error in Face Analysis Agent: module 'cv2' has no attribute 'CascadeClassifier'
+2026-08-08 08:21:48 | WARNING  | deepfake_agentic:aggregate:46 - [Fusion] Skipping Face Analysis Agent due to error: Uncaught agent exception: module 'cv2' has no attribute 'CascadeClassifier'
+2026-08-08 08:21:48 | INFO     | deepfake_agentic:aggregate:86 - [Fusion] Aggregated Verdict: REAL (Score: 0.1366, Conf: 0.48)
+2026-08-08 08:21:48 | INFO     | deepfake_agentic:analyze_media:108 - Report persisted successfully: D:\apps\Equilizer\nandakishor\backend\reports\ae78a367-5061-4b00-9996-44f959e547db_report.json
+2026-08-08 08:21:48 | INFO     | deepfake_agentic:cleanup_job_directory:191 - Cleaned up job directory: D:\apps\Equilizer\nandakishor\backend\uploads\ae78a367-5061-4b00-9996-44f959e547db
+2026-08-08 08:25:59 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 08:25:59 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 08:25:59 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:25:59 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Lip Sync Agent
+2026-08-08 08:25:59 | WARNING  | deepfake_agentic:_load_model:25 - [Lip Sync Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:25:59 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Motion Analysis Agent
+2026-08-08 08:25:59 | WARNING  | deepfake_agentic:_load_model:25 - [Motion Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:25:59 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 08:26:09 | DEBUG    | deepfake_agentic:create_job_directory:88 - Created job directory: D:\apps\Equilizer\nandakishor\backend\uploads\5f605185-0200-43e9-90eb-08aa867c1297
+2026-08-08 08:26:09 | INFO     | deepfake_agentic:save_uploaded_stream:166 - Streamed upload saved | Job ID: 5f605185-0200-43e9-90eb-08aa867c1297 | Path: D:\apps\Equilizer\nandakishor\backend\uploads\5f605185-0200-43e9-90eb-08aa867c1297\source_media.mp4
+2026-08-08 08:26:09 | INFO     | deepfake_agentic:process:25 - Starting media processing for: source_media.mp4
+2026-08-08 08:26:10 | INFO     | deepfake_agentic:extract_frames:68 - Extracted 7 frames from source_media.mp4 (Total Frames: 205, Step: 30)
+2026-08-08 08:26:10 | WARNING  | deepfake_agentic:extract_audio_from_video:60 - Audio extraction via FFmpeg skipped or failed: [WinError 2] The system cannot find the file specified
+2026-08-08 08:26:10 | INFO     | deepfake_agentic:process:53 - Video processing finished | Frames: 7 | Has Audio: False
+2026-08-08 08:26:10 | INFO     | deepfake_agentic:analyze_media:50 - [Coordinator] Dispatching agents for parallel execution...
+2026-08-08 08:26:10 | INFO     | deepfake_agentic:analyze:42 - [Motion Analysis Agent] Analyzing motion continuity across 7 frames...
+2026-08-08 08:26:10 | INFO     | deepfake_agentic:analyze:32 - [Metadata Analysis Agent] Inspecting container metadata for: source_media.mp4
+2026-08-08 08:26:11 | INFO     | deepfake_agentic:aggregate:86 - [Fusion] Aggregated Verdict: DEEPFAKE (Score: 0.5304, Conf: 0.534)
+2026-08-08 08:26:11 | INFO     | deepfake_agentic:analyze_media:108 - Report persisted successfully: D:\apps\Equilizer\nandakishor\backend\reports\5f605185-0200-43e9-90eb-08aa867c1297_report.json
+2026-08-08 08:26:11 | INFO     | deepfake_agentic:cleanup_job_directory:191 - Cleaned up job directory: D:\apps\Equilizer\nandakishor\backend\uploads\5f605185-0200-43e9-90eb-08aa867c1297
+2026-08-08 08:26:31 | DEBUG    | deepfake_agentic:create_job_directory:88 - Created job directory: D:\apps\Equilizer\nandakishor\backend\uploads\8c8bb0f8-042f-4046-875f-a81bd9016bb0
+2026-08-08 08:26:31 | INFO     | deepfake_agentic:save_uploaded_stream:166 - Streamed upload saved | Job ID: 8c8bb0f8-042f-4046-875f-a81bd9016bb0 | Path: D:\apps\Equilizer\nandakishor\backend\uploads\8c8bb0f8-042f-4046-875f-a81bd9016bb0\source_media.mp4
+2026-08-08 08:26:31 | INFO     | deepfake_agentic:process:25 - Starting media processing for: source_media.mp4
+2026-08-08 08:26:36 | INFO     | deepfake_agentic:extract_frames:68 - Extracted 49 frames from source_media.mp4 (Total Frames: 1445, Step: 30)
+2026-08-08 08:26:36 | WARNING  | deepfake_agentic:extract_audio_from_video:60 - Audio extraction via FFmpeg skipped or failed: [WinError 2] The system cannot find the file specified
+2026-08-08 08:26:36 | INFO     | deepfake_agentic:process:53 - Video processing finished | Frames: 49 | Has Audio: False
+2026-08-08 08:26:36 | INFO     | deepfake_agentic:analyze_media:50 - [Coordinator] Dispatching agents for parallel execution...
+2026-08-08 08:26:36 | INFO     | deepfake_agentic:analyze:42 - [Motion Analysis Agent] Analyzing motion continuity across 49 frames...
+2026-08-08 08:26:36 | INFO     | deepfake_agentic:analyze:32 - [Metadata Analysis Agent] Inspecting container metadata for: source_media.mp4
+2026-08-08 08:26:39 | INFO     | deepfake_agentic:aggregate:86 - [Fusion] Aggregated Verdict: DEEPFAKE (Score: 0.5622, Conf: 0.564)
+2026-08-08 08:26:39 | INFO     | deepfake_agentic:analyze_media:108 - Report persisted successfully: D:\apps\Equilizer\nandakishor\backend\reports\8c8bb0f8-042f-4046-875f-a81bd9016bb0_report.json
+2026-08-08 08:26:39 | INFO     | deepfake_agentic:cleanup_job_directory:191 - Cleaned up job directory: D:\apps\Equilizer\nandakishor\backend\uploads\8c8bb0f8-042f-4046-875f-a81bd9016bb0
+2026-08-08 08:32:02 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 08:32:02 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 08:32:02 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:32:02 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Lip Sync Agent
+2026-08-08 08:32:02 | WARNING  | deepfake_agentic:_load_model:25 - [Lip Sync Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:32:02 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Motion Analysis Agent
+2026-08-08 08:32:02 | WARNING  | deepfake_agentic:_load_model:25 - [Motion Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:32:02 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 08:32:02 | INFO     | deepfake_agentic:<module>:99 - Starting Equilizer FastAPI server on http://127.0.0.1:8000
+2026-08-08 08:32:02 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 08:32:02 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 08:32:02 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:32:02 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Lip Sync Agent
+2026-08-08 08:32:02 | WARNING  | deepfake_agentic:_load_model:25 - [Lip Sync Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:32:02 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Motion Analysis Agent
+2026-08-08 08:32:02 | WARNING  | deepfake_agentic:_load_model:25 - [Motion Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:32:02 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 08:37:57 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 08:37:57 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 08:37:57 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:37:57 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Lip Sync Agent
+2026-08-08 08:37:57 | WARNING  | deepfake_agentic:_load_model:25 - [Lip Sync Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:37:57 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Motion Analysis Agent
+2026-08-08 08:37:57 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 08:37:57 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Fusion Agent
+2026-08-08 08:37:57 | INFO     | deepfake_agentic:<module>:99 - Starting Equilizer FastAPI server on http://127.0.0.1:8000
+2026-08-08 08:37:57 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 08:37:57 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 08:37:57 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:37:57 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Lip Sync Agent
+2026-08-08 08:37:57 | WARNING  | deepfake_agentic:_load_model:25 - [Lip Sync Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:37:57 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Motion Analysis Agent
+2026-08-08 08:37:57 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 08:37:57 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Fusion Agent
+2026-08-08 08:38:13 | DEBUG    | deepfake_agentic:create_job_directory:88 - Created job directory: D:\apps\Equilizer\nandakishor - Copy\backend\uploads\f26ce907-dd7f-49b0-8b20-ec57b19e1977
+2026-08-08 08:38:13 | INFO     | deepfake_agentic:save_uploaded_stream:166 - Streamed upload saved | Job ID: f26ce907-dd7f-49b0-8b20-ec57b19e1977 | Path: D:\apps\Equilizer\nandakishor - Copy\backend\uploads\f26ce907-dd7f-49b0-8b20-ec57b19e1977\source_media.mp4
+2026-08-08 08:38:13 | INFO     | deepfake_agentic:process:25 - Starting media processing for: source_media.mp4
+2026-08-08 08:38:14 | INFO     | deepfake_agentic:extract_frames:68 - Extracted 7 frames from source_media.mp4 (Total Frames: 205, Step: 30)
+2026-08-08 08:38:14 | WARNING  | deepfake_agentic:extract_audio_from_video:60 - Audio extraction via FFmpeg skipped or failed: [WinError 2] The system cannot find the file specified
+2026-08-08 08:38:14 | INFO     | deepfake_agentic:process:53 - Video processing finished | Frames: 7 | Has Audio: False
+2026-08-08 08:38:14 | INFO     | deepfake_agentic:analyze_media:50 - [Coordinator] Dispatching agents for parallel execution...
+2026-08-08 08:38:14 | ERROR    | deepfake_agentic:_run_agent_async:33 - Execution error in Face Analysis Agent: module 'cv2' has no attribute 'CascadeClassifier'
+2026-08-08 08:38:14 | INFO     | deepfake_agentic:analyze:32 - [Metadata Analysis Agent] Inspecting container metadata for: source_media.mp4
+2026-08-08 08:38:14 | ERROR    | deepfake_agentic:analyze_media:124 - Unexpected error during media analysis pipeline execution.
+Traceback (most recent call last):
+  File "D:\apps\Equilizer\nandakishor - Copy\backend\routes\analyze.py", line 94, in analyze_media
+    report = await coordinator.analyze_media(processed_data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\apps\Equilizer\nandakishor - Copy\backend\agents\coordinator.py", line 65, in analyze_media
+    final_report = self.fusion_agent.aggregate(agent_results)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'FusionAgent' object has no attribute 'aggregate'
+2026-08-08 08:38:14 | INFO     | deepfake_agentic:cleanup_job_directory:191 - Cleaned up job directory: D:\apps\Equilizer\nandakishor - Copy\backend\uploads\f26ce907-dd7f-49b0-8b20-ec57b19e1977
+2026-08-08 08:39:54 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 08:39:54 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 08:39:54 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:39:54 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Lip Sync Agent
+2026-08-08 08:39:54 | WARNING  | deepfake_agentic:_load_model:25 - [Lip Sync Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:39:54 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Motion Analysis Agent
+2026-08-08 08:39:54 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 08:39:54 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Fusion Agent
+2026-08-08 08:48:45 | WARNING  | deepfake_agentic:<module>:24 - [FaceAgent] MediaPipe FaceMesh import failed: No module named 'mediapipe.python'. Falling back to visual heuristics.
+2026-08-08 08:48:45 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 08:48:45 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 08:48:45 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:48:45 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Lip Sync Agent
+2026-08-08 08:48:45 | WARNING  | deepfake_agentic:_load_model:25 - [Lip Sync Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:48:45 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Motion Analysis Agent
+2026-08-08 08:48:45 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 08:48:45 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Fusion Agent
+2026-08-08 08:48:45 | INFO     | deepfake_agentic:<module>:99 - Starting Equilizer FastAPI server on http://127.0.0.1:8000
+2026-08-08 08:48:46 | WARNING  | deepfake_agentic:<module>:24 - [FaceAgent] MediaPipe FaceMesh import failed: No module named 'mediapipe.python'. Falling back to visual heuristics.
+2026-08-08 08:48:46 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 08:48:46 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 08:48:46 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:48:46 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Lip Sync Agent
+2026-08-08 08:48:46 | WARNING  | deepfake_agentic:_load_model:25 - [Lip Sync Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:48:46 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Motion Analysis Agent
+2026-08-08 08:48:46 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 08:48:46 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Fusion Agent
+2026-08-08 08:49:02 | DEBUG    | deepfake_agentic:create_job_directory:88 - Created job directory: D:\apps\Equilizer\nandakishor - Copy\backend\uploads\70b97538-6fa4-454d-98b2-51438edfadb6
+2026-08-08 08:49:02 | INFO     | deepfake_agentic:save_uploaded_stream:166 - Streamed upload saved | Job ID: 70b97538-6fa4-454d-98b2-51438edfadb6 | Path: D:\apps\Equilizer\nandakishor - Copy\backend\uploads\70b97538-6fa4-454d-98b2-51438edfadb6\source_media.mp4
+2026-08-08 08:49:02 | INFO     | deepfake_agentic:process:25 - Starting media processing for: source_media.mp4
+2026-08-08 08:49:03 | INFO     | deepfake_agentic:extract_frames:68 - Extracted 7 frames from source_media.mp4 (Total Frames: 205, Step: 30)
+2026-08-08 08:49:03 | WARNING  | deepfake_agentic:extract_audio_from_video:60 - Audio extraction via FFmpeg skipped or failed: [WinError 2] The system cannot find the file specified
+2026-08-08 08:49:03 | INFO     | deepfake_agentic:process:53 - Video processing finished | Frames: 7 | Has Audio: False
+2026-08-08 08:49:03 | INFO     | deepfake_agentic:analyze_media:50 - [Coordinator] Dispatching agents for parallel execution...
+2026-08-08 08:49:03 | INFO     | deepfake_agentic:analyze:32 - [Metadata Analysis Agent] Inspecting container metadata for: source_media.mp4
+2026-08-08 08:49:04 | ERROR    | deepfake_agentic:analyze_media:124 - Unexpected error during media analysis pipeline execution.
+Traceback (most recent call last):
+  File "D:\apps\Equilizer\nandakishor - Copy\backend\routes\analyze.py", line 94, in analyze_media
+    report = await coordinator.analyze_media(processed_data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\apps\Equilizer\nandakishor - Copy\backend\agents\coordinator.py", line 65, in analyze_media
+    final_report = self.fusion_agent.aggregate(agent_results)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'FusionAgent' object has no attribute 'aggregate'
+2026-08-08 08:49:04 | INFO     | deepfake_agentic:cleanup_job_directory:191 - Cleaned up job directory: D:\apps\Equilizer\nandakishor - Copy\backend\uploads\70b97538-6fa4-454d-98b2-51438edfadb6
+2026-08-08 08:49:56 | WARNING  | deepfake_agentic:<module>:28 - [FaceAgent] MediaPipe FaceMesh import unavailable: No module named 'mediapipe.solutions'. Using visual OpenCV heuristics.
+2026-08-08 08:49:56 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 08:49:56 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 08:49:56 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:49:56 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Lip Sync Agent
+2026-08-08 08:49:56 | WARNING  | deepfake_agentic:_load_model:25 - [Lip Sync Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:49:56 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Motion Analysis Agent
+2026-08-08 08:49:56 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 08:49:56 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Fusion Agent
+2026-08-08 08:50:04 | DEBUG    | deepfake_agentic:create_job_directory:88 - Created job directory: D:\apps\Equilizer\nandakishor - Copy\backend\uploads\cf3c6b8a-1242-4197-b25f-4c3364897e2a
+2026-08-08 08:50:04 | INFO     | deepfake_agentic:save_uploaded_stream:166 - Streamed upload saved | Job ID: cf3c6b8a-1242-4197-b25f-4c3364897e2a | Path: D:\apps\Equilizer\nandakishor - Copy\backend\uploads\cf3c6b8a-1242-4197-b25f-4c3364897e2a\source_media.mp4
+2026-08-08 08:50:04 | INFO     | deepfake_agentic:process:25 - Starting media processing for: source_media.mp4
+2026-08-08 08:50:06 | INFO     | deepfake_agentic:extract_frames:68 - Extracted 7 frames from source_media.mp4 (Total Frames: 205, Step: 30)
+2026-08-08 08:50:06 | WARNING  | deepfake_agentic:extract_audio_from_video:60 - Audio extraction via FFmpeg skipped or failed: [WinError 2] The system cannot find the file specified
+2026-08-08 08:50:06 | INFO     | deepfake_agentic:process:53 - Video processing finished | Frames: 7 | Has Audio: False
+2026-08-08 08:50:06 | INFO     | deepfake_agentic:analyze_media:50 - [Coordinator] Dispatching agents for parallel execution...
+2026-08-08 08:50:06 | INFO     | deepfake_agentic:analyze:32 - [Metadata Analysis Agent] Inspecting container metadata for: source_media.mp4
+2026-08-08 08:50:06 | ERROR    | deepfake_agentic:analyze_media:124 - Unexpected error during media analysis pipeline execution.
+Traceback (most recent call last):
+  File "D:\apps\Equilizer\nandakishor - Copy\backend\routes\analyze.py", line 94, in analyze_media
+    report = await coordinator.analyze_media(processed_data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\apps\Equilizer\nandakishor - Copy\backend\agents\coordinator.py", line 65, in analyze_media
+    final_report = self.fusion_agent.aggregate(agent_results)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'FusionAgent' object has no attribute 'aggregate'
+2026-08-08 08:50:06 | INFO     | deepfake_agentic:cleanup_job_directory:191 - Cleaned up job directory: D:\apps\Equilizer\nandakishor - Copy\backend\uploads\cf3c6b8a-1242-4197-b25f-4c3364897e2a
+2026-08-08 08:51:08 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 08:51:08 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 08:51:08 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:51:08 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Lip Sync Agent
+2026-08-08 08:51:08 | WARNING  | deepfake_agentic:_load_model:25 - [Lip Sync Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:51:08 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Motion Analysis Agent
+2026-08-08 08:51:08 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 08:51:08 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Fusion Agent
+2026-08-08 08:51:08 | INFO     | deepfake_agentic:<module>:99 - Starting Equilizer FastAPI server on http://127.0.0.1:8000
+2026-08-08 08:51:09 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 08:51:09 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 08:51:09 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:51:09 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Lip Sync Agent
+2026-08-08 08:51:09 | WARNING  | deepfake_agentic:_load_model:25 - [Lip Sync Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:51:09 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Motion Analysis Agent
+2026-08-08 08:51:09 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 08:51:09 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Fusion Agent
+2026-08-08 08:51:23 | DEBUG    | deepfake_agentic:create_job_directory:88 - Created job directory: D:\apps\Equilizer\nandakishor - Copy\backend\uploads\264899a3-d4f5-4766-a427-49f4fdc51259
+2026-08-08 08:51:23 | INFO     | deepfake_agentic:save_uploaded_stream:166 - Streamed upload saved | Job ID: 264899a3-d4f5-4766-a427-49f4fdc51259 | Path: D:\apps\Equilizer\nandakishor - Copy\backend\uploads\264899a3-d4f5-4766-a427-49f4fdc51259\source_media.mp4
+2026-08-08 08:51:23 | INFO     | deepfake_agentic:process:25 - Starting media processing for: source_media.mp4
+2026-08-08 08:51:24 | INFO     | deepfake_agentic:extract_frames:68 - Extracted 7 frames from source_media.mp4 (Total Frames: 205, Step: 30)
+2026-08-08 08:51:24 | WARNING  | deepfake_agentic:extract_audio_from_video:60 - Audio extraction via FFmpeg skipped or failed: [WinError 2] The system cannot find the file specified
+2026-08-08 08:51:24 | INFO     | deepfake_agentic:process:53 - Video processing finished | Frames: 7 | Has Audio: False
+2026-08-08 08:51:24 | INFO     | deepfake_agentic:analyze_media:50 - [Coordinator] Dispatching agents for parallel execution...
+2026-08-08 08:51:24 | INFO     | deepfake_agentic:analyze:32 - [Metadata Analysis Agent] Inspecting container metadata for: source_media.mp4
+2026-08-08 08:51:24 | WARNING  | deepfake_agentic:analyze:117 - [Face Analysis Agent] Error analyzing frame D:\apps\Equilizer\nandakishor - Copy\backend\uploads\264899a3-d4f5-4766-a427-49f4fdc51259\frames\frame_0000.jpg: module 'numpy' has no attribute 'linalg_norm'
+2026-08-08 08:51:24 | WARNING  | deepfake_agentic:analyze:117 - [Face Analysis Agent] Error analyzing frame D:\apps\Equilizer\nandakishor - Copy\backend\uploads\264899a3-d4f5-4766-a427-49f4fdc51259\frames\frame_0001.jpg: module 'numpy' has no attribute 'linalg_norm'
+2026-08-08 08:51:24 | WARNING  | deepfake_agentic:analyze:117 - [Face Analysis Agent] Error analyzing frame D:\apps\Equilizer\nandakishor - Copy\backend\uploads\264899a3-d4f5-4766-a427-49f4fdc51259\frames\frame_0002.jpg: module 'numpy' has no attribute 'linalg_norm'
+2026-08-08 08:51:24 | WARNING  | deepfake_agentic:analyze:117 - [Face Analysis Agent] Error analyzing frame D:\apps\Equilizer\nandakishor - Copy\backend\uploads\264899a3-d4f5-4766-a427-49f4fdc51259\frames\frame_0003.jpg: module 'numpy' has no attribute 'linalg_norm'
+2026-08-08 08:51:24 | WARNING  | deepfake_agentic:analyze:117 - [Face Analysis Agent] Error analyzing frame D:\apps\Equilizer\nandakishor - Copy\backend\uploads\264899a3-d4f5-4766-a427-49f4fdc51259\frames\frame_0004.jpg: module 'numpy' has no attribute 'linalg_norm'
+2026-08-08 08:51:24 | WARNING  | deepfake_agentic:analyze:117 - [Face Analysis Agent] Error analyzing frame D:\apps\Equilizer\nandakishor - Copy\backend\uploads\264899a3-d4f5-4766-a427-49f4fdc51259\frames\frame_0005.jpg: module 'numpy' has no attribute 'linalg_norm'
+2026-08-08 08:51:24 | WARNING  | deepfake_agentic:analyze:117 - [Face Analysis Agent] Error analyzing frame D:\apps\Equilizer\nandakishor - Copy\backend\uploads\264899a3-d4f5-4766-a427-49f4fdc51259\frames\frame_0006.jpg: module 'numpy' has no attribute 'linalg_norm'
+2026-08-08 08:51:24 | ERROR    | deepfake_agentic:analyze_media:124 - Unexpected error during media analysis pipeline execution.
+Traceback (most recent call last):
+  File "D:\apps\Equilizer\nandakishor - Copy\backend\routes\analyze.py", line 94, in analyze_media
+    report = await coordinator.analyze_media(processed_data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\apps\Equilizer\nandakishor - Copy\backend\agents\coordinator.py", line 65, in analyze_media
+    final_report = self.fusion_agent.aggregate(agent_results)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'FusionAgent' object has no attribute 'aggregate'
+2026-08-08 08:51:24 | INFO     | deepfake_agentic:cleanup_job_directory:191 - Cleaned up job directory: D:\apps\Equilizer\nandakishor - Copy\backend\uploads\264899a3-d4f5-4766-a427-49f4fdc51259
+2026-08-08 08:53:14 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 08:53:14 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 08:53:14 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:53:14 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Lip Sync Agent
+2026-08-08 08:53:14 | WARNING  | deepfake_agentic:_load_model:25 - [Lip Sync Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 08:53:14 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Motion Analysis Agent
+2026-08-08 08:53:14 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 08:53:14 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Fusion Agent
+2026-08-08 09:05:12 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Video Analysis Agent
+2026-08-08 09:05:12 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 09:05:12 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 09:05:12 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 09:05:44 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Video Analysis Agent
+2026-08-08 09:05:44 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 09:05:44 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 09:05:44 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 09:06:58 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Video Analysis Agent
+2026-08-08 09:06:58 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 09:06:58 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 09:06:58 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 09:06:58 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 09:06:58 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Fusion Agent
+2026-08-08 09:10:41 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Video Analysis Agent
+2026-08-08 09:10:41 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 09:10:41 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 09:10:41 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 09:10:41 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 09:10:41 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Fusion Agent
+2026-08-08 09:12:07 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Video Analysis Agent
+2026-08-08 09:12:07 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 09:12:07 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 09:12:07 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 09:12:07 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 09:12:07 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Fusion Agent
+2026-08-08 09:12:07 | INFO     | deepfake_agentic:<module>:99 - Starting Equilizer FastAPI server on http://127.0.0.1:8000
+2026-08-08 09:12:08 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Video Analysis Agent
+2026-08-08 09:12:08 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 09:12:08 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 09:12:08 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 09:12:08 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 09:12:08 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Fusion Agent
+2026-08-08 09:12:17 | DEBUG    | deepfake_agentic:create_job_directory:88 - Created job directory: D:\apps\Equilizer\nandakishor - Copy\backend\uploads\7fea25e3-3374-4c5b-9ddc-080565f9f06e
+2026-08-08 09:12:17 | INFO     | deepfake_agentic:save_uploaded_stream:166 - Streamed upload saved | Job ID: 7fea25e3-3374-4c5b-9ddc-080565f9f06e | Path: D:\apps\Equilizer\nandakishor - Copy\backend\uploads\7fea25e3-3374-4c5b-9ddc-080565f9f06e\source_media.mp4
+2026-08-08 09:12:17 | INFO     | deepfake_agentic:process:25 - Starting media processing for: source_media.mp4
+2026-08-08 09:12:18 | INFO     | deepfake_agentic:extract_frames:68 - Extracted 7 frames from source_media.mp4 (Total Frames: 205, Step: 30)
+2026-08-08 09:12:18 | WARNING  | deepfake_agentic:extract_audio_from_video:60 - Audio extraction via FFmpeg skipped or failed: [WinError 2] The system cannot find the file specified
+2026-08-08 09:12:18 | INFO     | deepfake_agentic:process:53 - Video processing finished | Frames: 7 | Has Audio: False
+2026-08-08 09:12:18 | ERROR    | deepfake_agentic:analyze_media:124 - Unexpected error during media analysis pipeline execution.
+Traceback (most recent call last):
+  File "D:\apps\Equilizer\nandakishor - Copy\backend\routes\analyze.py", line 94, in analyze_media
+    report = await coordinator.analyze_media(processed_data)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AgentCoordinator' object has no attribute 'analyze_media'
+2026-08-08 09:12:18 | INFO     | deepfake_agentic:cleanup_job_directory:191 - Cleaned up job directory: D:\apps\Equilizer\nandakishor - Copy\backend\uploads\7fea25e3-3374-4c5b-9ddc-080565f9f06e
+2026-08-08 09:14:01 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Video Analysis Agent
+2026-08-08 09:14:01 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 09:14:01 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 09:14:01 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 09:14:01 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 09:14:01 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Fusion Agent
+2026-08-08 09:14:11 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Video Analysis Agent
+2026-08-08 09:14:11 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 09:14:11 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 09:14:11 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 09:14:11 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 09:14:11 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Fusion Agent
+2026-08-08 09:14:11 | INFO     | deepfake_agentic:<module>:99 - Starting Equilizer FastAPI server on http://127.0.0.1:8000
+2026-08-08 09:14:12 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Video Analysis Agent
+2026-08-08 09:14:12 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 09:14:12 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 09:14:12 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 09:14:12 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 09:14:12 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Fusion Agent
+2026-08-08 09:14:26 | INFO     | deepfake_agentic:analyze_file:62 - Received file for analysis: Screen Recording 2026-08-08 081316.mp4
+2026-08-08 09:14:28 | INFO     | deepfake_agentic:analyze:32 - [Metadata Analysis Agent] Inspecting container metadata for: tmpd8sp2ah9.mp4
+2026-08-08 09:14:28 | ERROR    | deepfake_agentic:run:48 - [Coordinator] FusionAgent error: 'str' object has no attribute 'get'
+2026-08-08 09:14:42 | INFO     | deepfake_agentic:analyze_file:62 - Received file for analysis: WIN_20260422_13_41_59_Pro.mp4
+2026-08-08 09:14:47 | INFO     | deepfake_agentic:analyze:32 - [Metadata Analysis Agent] Inspecting container metadata for: tmpikvmiyqd.mp4
+2026-08-08 09:14:47 | ERROR    | deepfake_agentic:run:48 - [Coordinator] FusionAgent error: 'str' object has no attribute 'get'
+2026-08-08 09:16:20 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Video Analysis Agent
+2026-08-08 09:16:20 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 09:16:20 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 09:16:20 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 09:16:20 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 09:16:20 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Fusion Agent
+2026-08-08 09:17:53 | INFO     | deepfake_agentic:analyze_file:62 - Received file for analysis: WIN_20260422_13_41_59_Pro.mp4
+2026-08-08 09:17:59 | INFO     | deepfake_agentic:analyze:32 - [Metadata Analysis Agent] Inspecting container metadata for: tmpizjqi9na.mp4
+2026-08-08 09:18:27 | INFO     | deepfake_agentic:analyze_file:62 - Received file for analysis: VID_20260130_181815325~2.mp4
+2026-08-08 09:18:35 | INFO     | deepfake_agentic:analyze:32 - [Metadata Analysis Agent] Inspecting container metadata for: tmpc1eod4vt.mp4
+2026-08-08 09:19:33 | INFO     | deepfake_agentic:analyze_file:62 - Received file for analysis: VID_20260130_181815325~2.mp4
+2026-08-08 09:19:41 | INFO     | deepfake_agentic:analyze:32 - [Metadata Analysis Agent] Inspecting container metadata for: tmpts6eof7u.mp4
+2026-08-08 09:19:57 | INFO     | deepfake_agentic:analyze_file:62 - Received file for analysis: Screen Recording 2026-08-08 081316.mp4
+2026-08-08 09:19:59 | INFO     | deepfake_agentic:analyze:32 - [Metadata Analysis Agent] Inspecting container metadata for: tmp33_x56iv.mp4
+2026-08-08 09:20:11 | INFO     | deepfake_agentic:analyze_file:62 - Received file for analysis: Screen Recording 2026-08-08 081316.mp4
+2026-08-08 09:20:13 | INFO     | deepfake_agentic:analyze:32 - [Metadata Analysis Agent] Inspecting container metadata for: tmp43y9dhdy.mp4
+2026-08-08 09:24:16 | INFO     | deepfake_agentic:analyze_file:62 - Received file for analysis: Screen Recording 2026-08-08 081316.mp4
+2026-08-08 09:24:18 | INFO     | deepfake_agentic:analyze:32 - [Metadata Analysis Agent] Inspecting container metadata for: tmpiczs_pmg.mp4
+2026-08-08 09:24:33 | INFO     | deepfake_agentic:analyze_file:62 - Received file for analysis: VID_20260130_181815325~2.mp4
+2026-08-08 09:24:41 | INFO     | deepfake_agentic:analyze:32 - [Metadata Analysis Agent] Inspecting container metadata for: tmpbp496fmp.mp4
+2026-08-08 09:26:12 | INFO     | deepfake_agentic:analyze_file:62 - Received file for analysis: Screen Recording 2026-08-08 081316.mp4
+2026-08-08 09:26:14 | INFO     | deepfake_agentic:analyze:32 - [Metadata Analysis Agent] Inspecting container metadata for: tmp_opar72c.mp4
+2026-08-08 10:23:18 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Video Analysis Agent
+2026-08-08 10:23:18 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 10:23:18 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 10:23:18 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 10:23:18 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 10:23:18 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Fusion Agent
+2026-08-08 10:23:18 | INFO     | deepfake_agentic:<module>:99 - Starting Equilizer FastAPI server on http://127.0.0.1:8000
+2026-08-08 10:23:19 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Video Analysis Agent
+2026-08-08 10:23:19 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 10:23:19 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 10:23:19 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 10:23:19 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 10:23:19 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Fusion Agent
+2026-08-08 10:23:24 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Video Analysis Agent
+2026-08-08 10:23:24 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 10:23:24 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 10:23:24 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 10:23:24 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 10:23:24 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Fusion Agent
+2026-08-08 10:23:24 | INFO     | deepfake_agentic:<module>:99 - Starting Equilizer FastAPI server on http://127.0.0.1:8000
+2026-08-08 10:23:25 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Video Analysis Agent
+2026-08-08 10:23:25 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Audio Analysis Agent
+2026-08-08 10:23:25 | WARNING  | deepfake_agentic:_load_model:27 - [Audio Analysis Agent] Model path not provided or found. Running in heuristic/fallback mode.
+2026-08-08 10:23:25 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Face Analysis Agent
+2026-08-08 10:23:25 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Metadata Analysis Agent
+2026-08-08 10:23:25 | INFO     | deepfake_agentic:__init__:14 - Initialized agent: Fusion Agent
+2026-08-08 10:23:41 | INFO     | deepfake_agentic:analyze_file:62 - Received file for analysis: sel-intro-ls.mp4
+2026-08-08 10:23:58 | INFO     | deepfake_agentic:analyze:32 - [Metadata Analysis Agent] Inspecting container metadata for: tmpu5fcwmrx.mp4
+2026-08-08 10:27:02 | INFO     | deepfake_agentic:analyze_file:62 - Received file for analysis: WIN_20260808_10_26_42_Pro.mp4
+2026-08-08 10:27:05 | INFO     | deepfake_agentic:analyze:32 - [Metadata Analysis Agent] Inspecting container metadata for: tmpi6psgi56.mp4

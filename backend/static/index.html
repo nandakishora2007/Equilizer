@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deepfake Detection Agent Dashboard</title>
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --border-color: #334155;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #3b82f6;
+      --primary-hover: #2563eb;
+      --danger: #ef4444;
+      --success: #22c55e;
+      --warning: #f59e0b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 800px;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 32px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    p.subtitle {
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      font-size: 0.95rem;
+    }
+
+    /* Dropzone Styling */
+    .dropzone {
+      border: 2px dashed var(--border-color);
+      border-radius: 8px;
+      padding: 40px 20px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .dropzone:hover, .dropzone.dragover {
+      border-color: var(--primary);
+      background: rgba(59, 130, 246, 0.05);
+    }
+
+    .dropzone-text {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .dropzone-text strong {
+      color: var(--primary);
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+
+    /* Status & Loading */
+    .status-box {
+      display: none;
+      margin-top: 24px;
+      text-align: center;
+    }
+
+    .spinner {
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+      border: 3px solid rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      border-top-color: var(--primary);
+      animation: spin 1s linear infinite;
+      margin-bottom: 12px;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    /* Results Dashboard */
+    .results-card {
+      display: none;
+      margin-top: 24px;
+      background: rgba(0, 0, 0, 0.2);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 24px;
+    }
+
+    .verdict-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .verdict-badge {
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .badge-deepfake {
+      background: rgba(239, 68, 68, 0.2);
+      color: var(--danger);
+      border: 1px solid var(--danger);
+    }
+
+    .badge-real {
+      background: rgba(34, 197, 94, 0.2);
+      color: var(--success);
+      border: 1px solid var(--success);
+    }
+
+    .badge-uncertain {
+      background: rgba(245, 158, 11, 0.2);
+      color: var(--warning);
+      border: 1px solid var(--warning);
+    }
+
+    .score-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .score-item {
+      background: var(--card-bg);
+      padding: 16px;
+      border-radius: 6px;
+      border: 1px solid var(--border-color);
+    }
+
+    .score-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .score-value {
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+
+    .details-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--text-main);
+    }
+
+    .details-list {
+      list-style-type: none;
+    }
+
+    .details-list li {
+      position: relative;
+      padding-left: 18px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .details-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--primary);
+    }
+
+    .error-box {
+      display: none;
+      margin-top: 20px;
+      padding: 12px 16px;
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid var(--danger);
+      border-radius: 6px;
+      color: var(--danger);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Agentic Deepfake Inspection</h1>
+    <p class="subtitle">Upload a video to analyze facial synthesis, frame transitions, and spectral artifacts.</p>
+
+    <!-- Upload Dropzone -->
+    <div class="dropzone" id="dropzone">
+      <div class="dropzone-text">
+        Drag & drop video file here or <strong>browse files</strong>
+      </div>
+      <input type="file" id="fileInput" accept="video/*,image/*">
+    </div>
+
+    <!-- Loading State -->
+    <div class="status-box" id="statusBox">
+      <div class="spinner"></div>
+      <p id="statusText" style="font-size: 0.9rem; color: var(--text-muted);">Processing video through agent pipeline...</p>
+    </div>
+
+    <!-- Error Display -->
+    <div class="error-box" id="errorBox"></div>
+
+    <!-- Results Panel -->
+    <div class="results-card" id="resultsCard">
+      <div class="verdict-header">
+        <div>
+          <span style="font-size: 0.85rem; color: var(--text-muted);">File Analyzed</span>
+          <div id="filenameText" style="font-weight: 600; font-size: 1rem; margin-top: 2px;">-</div>
+        </div>
+        <div id="verdictBadge" class="verdict-badge badge-uncertain">UNCERTAIN</div>
+      </div>
+
+      <div class="score-grid">
+        <div class="score-item">
+          <div class="score-label">Deepfake Risk</div>
+          <div class="score-value" id="overallScore">0%</div>
+        </div>
+        <div class="score-item">
+          <div class="score-label">Pipeline Confidence</div>
+          <div class="score-value" id="confidenceScore">0%</div>
+        </div>
+      </div>
+
+      <div class="details-title">Analysis Insights</div>
+      <ul class="details-list" id="detailsList"></ul>
+    </div>
+  </div>
+
+  <script>
+    const dropzone = document.getElementById('dropzone');
+    const fileInput = document.getElementById('fileInput');
+    const statusBox = document.getElementById('statusBox');
+    const resultsCard = document.getElementById('resultsCard');
+    const errorBox = document.getElementById('errorBox');
+
+    // Drag and drop handlers
+    dropzone.addEventListener('click', () => fileInput.click());
+
+    ['dragenter', 'dragover'].forEach(eventName => {
+      dropzone.addEventListener(eventName, (e) => {
+        e.preventDefault();
+        dropzone.classList.add('dragover');
+      }, false);
+    });
+
+    ['dragleave', 'drop'].forEach(eventName => {
+      dropzone.addEventListener(eventName, (e) => {
+        e.preventDefault();
+        dropzone.classList.remove('dragover');
+      }, false);
+    });
+
+    dropzone.addEventListener('drop', (e) => {
+      const files = e.dataTransfer.files;
+      if (files.length) handleFileUpload(files[0]);
+    });
+
+    fileInput.addEventListener('change', (e) => {
+      if (e.target.files.length) handleFileUpload(e.target.files[0]);
+    });
+
+    // Upload & Render Logic
+    async function handleFileUpload(file) {
+      // Reset UI
+      errorBox.style.display = 'none';
+      resultsCard.style.display = 'none';
+      statusBox.style.display = 'block';
+
+      const formData = new FormData();
+      formData.append('file', file);
+
+      try {
+        const response = await fetch('/analyze/', {
+          method: 'POST',
+          body: formData
+        });
+
+        if (!response.ok) {
+          throw new Error(`Server responded with HTTP ${response.status}`);
+        }
+
+        const rawData = await response.json();
+        
+        // Render with defensive fallback parsing
+        renderResults(rawData, file.name);
+
+      } catch (err) {
+        errorBox.textContent = `Upload Error: ${err.message}`;
+        errorBox.style.display = 'block';
+      } finally {
+        statusBox.style.display = 'none';
+        fileInput.value = ''; // Reset input
+      }
+    }
+
+    /**
+     * Safely reads payload attributes to prevent 'Cannot read properties of undefined' errors.
+     */
+    function renderResults(data, fallbackFilename) {
+      // 1. Safe Property Extraction with Fallbacks
+      const verdict = (data?.verdict || data?.data?.verdict || 'UNCERTAIN').toUpperCase();
+      const rawScore = data?.overall_score ?? data?.data?.overall_score ?? 0.5;
+      const rawConfidence = data?.confidence ?? data?.data?.confidence ?? 0.5;
+      const details = data?.details || data?.data?.details || ['Inspection completed with default agent checks.'];
+      const filename = data?.filename || fallbackFilename;
+
+      // 2. Format UI Elements
+      document.getElementById('filenameText').textContent = filename;
+      document.getElementById('overallScore').textContent = `${(rawScore * 100).toFixed(1)}%`;
+      document.getElementById('confidenceScore').textContent = `${(rawConfidence * 100).toFixed(0)}%`;
+
+      // 3. Update Badge Styling
+      const badge = document.getElementById('verdictBadge');
+      badge.textContent = verdict;
+      badge.className = 'verdict-badge ';
+
+      if (verdict.includes('DEEPFAKE')) {
+        badge.classList.add('badge-deepfake');
+      } else if (verdict.includes('REAL')) {
+        badge.classList.add('badge-real');
+      } else {
+        badge.classList.add('badge-uncertain');
+      }
+
+      // 4. Update Details List
+      const detailsList = document.getElementById('detailsList');
+      detailsList.innerHTML = '';
+      details.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        detailsList.appendChild(li);
+      });
+
+      // Show Results
+      resultsCard.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
