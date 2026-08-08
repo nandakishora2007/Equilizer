@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Equilizer - Deepfake Detection Dashboard</title>
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --border-color: #334155;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #6366f1;
+      --primary-hover: #4f46e5;
+      --real-color: #10b981;
+      --deepfake-color: #ef4444;
+      --unknown-color: #f59e0b;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { background-color: var(--bg-color); color: var(--text-main); padding: 20px; min-height: 100vh; display: flex; flex-direction: column; align-items: center; }
+
+    header { text-align: center; margin-bottom: 30px; margin-top: 10px; }
+    header h1 { font-size: 2.2rem; font-weight: 700; color: var(--text-main); }
+    header p { color: var(--text-muted); margin-top: 5px; }
+
+    .container { width: 100%; max-width: 900px; display: flex; flex-direction: column; gap: 24px; }
+
+    /* Dropzone Styling */
+    .upload-card { background-color: var(--card-bg); border: 2px dashed var(--border-color); border-radius: 12px; padding: 40px 20px; text-align: center; cursor: pointer; transition: all 0.2s ease; }
+    .upload-card:hover, .upload-card.dragover { border-color: var(--primary); background-color: #1e293b99; }
+    .upload-icon { font-size: 48px; color: var(--primary); margin-bottom: 12px; }
+    .file-input { display: none; }
+    .btn { background-color: var(--primary); color: white; border: none; padding: 10px 20px; font-weight: 600; border-radius: 6px; cursor: pointer; margin-top: 15px; transition: background 0.2s; }
+    .btn:hover { background-color: var(--primary-hover); }
+
+    /* Loading Spinner */
+    .loading-card { display: none; background-color: var(--card-bg); border-radius: 12px; padding: 30px; text-align: center; }
+    .spinner { border: 4px solid #334155; border-top: 4px solid var(--primary); border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin: 0 auto 15px; }
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+    /* Results Dashboard */
+    .result-card { display: none; background-color: var(--card-bg); border-radius: 12px; padding: 24px; border: 1px solid var(--border-color); }
+    .summary-header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 20px; border-bottom: 1px solid var(--border-color); }
+    .verdict-badge { font-size: 1.2rem; font-weight: 700; padding: 8px 16px; border-radius: 20px; text-transform: uppercase; }
+    .verdict-REAL { background-color: #10b98122; color: var(--real-color); border: 1px solid var(--real-color); }
+    .verdict-DEEPFAKE { background-color: #ef444422; color: var(--deepfake-color); border: 1px solid var(--deepfake-color); }
+    .verdict-UNKNOWN { background-color: #f59e0b22; color: var(--unknown-color); border: 1px solid var(--unknown-color); }
+
+    .score-metrics { display: flex; gap: 20px; margin: 20px 0; }
+    .metric-box { flex: 1; background-color: #0f172a66; padding: 16px; border-radius: 8px; border: 1px solid var(--border-color); }
+    .metric-box .label { font-size: 0.85rem; color: var(--text-muted); }
+    .metric-box .value { font-size: 1.6rem; font-weight: 700; margin-top: 4px; }
+
+    /* Agent Breakdown Grid */
+    .agents-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-top: 20px; }
+    .agent-card { background-color: #0f172a44; border: 1px solid var(--border-color); border-radius: 8px; padding: 16px; }
+    .agent-name { font-weight: 600; font-size: 0.95rem; display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+    .agent-details { font-size: 0.85rem; color: var(--text-muted); list-style-type: none; }
+    .agent-details li { margin-bottom: 4px; line-height: 1.3; }
+
+    .progress-bar-bg { background-color: #334155; height: 6px; border-radius: 3px; overflow: hidden; margin-top: 8px; }
+    .progress-bar-fill { height: 100%; width: 0%; transition: width 0.4s ease; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Equilizer Dashboard</h1>
+    <p>Multi-Agent Deepfake Detection & Media Authentication Platform</p>
+  </header>
+
+  <div class="container">
+    <!-- File Upload Section -->
+    <div class="upload-card" id="dropzone">
+      <div class="upload-icon">📁</div>
+      <h3>Drag & Drop Video or Audio File</h3>
+      <p style="color: var(--text-muted); margin-top: 5px;">Supports .mp4, .avi, .mov, .webm, .wav, .mp3</p>
+      <input type="file" id="fileInput" class="file-input" accept="video/*,audio/*" />
+      <button class="btn" onclick="document.getElementById('fileInput').click()">Browse File</button>
+    </div>
+
+    <!-- Processing Indicator -->
+    <div class="loading-card" id="loadingCard">
+      <div class="spinner"></div>
+      <h3>Analyzing Media File...</h3>
+      <p style="color: var(--text-muted); margin-top: 5px;">Running face, audio, lip-sync, motion, and metadata inspection agents.</p>
+    </div>
+
+    <!-- Final Analysis Report -->
+    <div class="result-card" id="resultCard">
+      <div class="summary-header">
+        <div>
+          <h2 id="mediaFilename">video.mp4</h2>
+          <p id="jobIdText" style="color: var(--text-muted); font-size: 0.85rem;">Job ID: --</p>
+        </div>
+        <div id="verdictBadge" class="verdict-badge verdict-REAL">REAL</div>
+      </div>
+
+      <div class="score-metrics">
+        <div class="metric-box">
+          <div class="label">Deepfake Score</div>
+          <div class="value" id="scoreValue">0.0%</div>
+        </div>
+        <div class="metric-box">
+          <div class="label">Confidence Level</div>
+          <div class="value" id="confidenceValue">0.0%</div>
+        </div>
+      </div>
+
+      <h3 style="margin-top: 24px; font-size: 1.1rem;">Agent Analysis Breakdown</h3>
+      <div class="agents-grid" id="agentsGrid"></div>
+
+      <button class="btn" style="margin-top: 24px;" onclick="resetDashboard()">Analyze Another File</button>
+    </div>
+  </div>
+
+  <script>
+    const dropzone = document.getElementById('dropzone');
+    const fileInput = document.getElementById('fileInput');
+    const loadingCard = document.getElementById('loadingCard');
+    const resultCard = document.getElementById('resultCard');
+
+    // Drag and Drop listeners
+    ['dragenter', 'dragover'].forEach(eventName => {
+      dropzone.addEventListener(eventName, (e) => { e.preventDefault(); dropzone.classList.add('dragover'); }, false);
+    });
+    ['dragleave', 'drop'].forEach(eventName => {
+      dropzone.addEventListener(eventName, (e) => { e.preventDefault(); dropzone.classList.remove('dragover'); }, false);
+    });
+
+    dropzone.addEventListener('drop', (e) => {
+      const files = e.dataTransfer.files;
+      if (files.length) uploadFile(files[0]);
+    });
+
+    fileInput.addEventListener('change', (e) => {
+      if (fileInput.files.length) uploadFile(fileInput.files[0]);
+    });
+
+    async function uploadFile(file) {
+      dropzone.style.display = 'none';
+      resultCard.style.display = 'none';
+      loadingCard.style.display = 'block';
+
+      const formData = new FormData();
+      formData.append('file', file);
+
+      try {
+        const response = await fetch('/analyze/', {
+          method: 'POST',
+          body: formData,
+        });
+
+        if (!response.ok) {
+          throw new Error(`Analysis failed with status ${response.status}`);
+        }
+
+        const data = await response.json();
+        renderResults(data);
+      } catch (err) {
+        alert(`Error: ${err.message}`);
+        resetDashboard();
+      }
+    }
+
+    function renderResults(payload) {
+      loadingCard.style.display = 'none';
+      resultCard.style.display = 'block';
+
+      document.getElementById('mediaFilename').textContent = payload.filename;
+      document.getElementById('jobIdText').textContent = `Job ID: ${payload.job_id}`;
+
+      const analysis = payload.analysis;
+      const verdictBadge = document.getElementById('verdictBadge');
+      verdictBadge.textContent = analysis.verdict;
+      verdictBadge.className = `verdict-badge verdict-${analysis.verdict}`;
+
+      document.getElementById('scoreValue').textContent = `${(analysis.final_score * 100).toFixed(1)}%`;
+      document.getElementById('confidenceValue').textContent = `${(analysis.confidence * 100).toFixed(1)}%`;
+
+      const agentsGrid = document.getElementById('agentsGrid');
+      agentsGrid.innerHTML = '';
+
+      analysis.agent_breakdown.forEach(agent => {
+        const card = document.createElement('div');
+        card.className = 'agent-card';
+
+        const isFake = agent.score >= 0.5;
+        const barColor = isFake ? 'var(--deepfake-color)' : 'var(--real-color)';
+        const scorePct = (agent.score * 100).toFixed(0);
+
+        const detailsList = agent.details.map(d => `<li>• ${d}</li>`).join('');
+
+        card.innerHTML = `
+          <div class="agent-name">
+            <span>${agent.agent_name}</span>
+            <span style="color: ${barColor}">${agent.verdict}</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" style="width: ${scorePct}%; background-color: ${barColor};"></div>
+          </div>
+          <ul class="agent-details" style="margin-top: 12px;">
+            ${detailsList || '<li>No observations recorded.</li>'}
+          </ul>
+        `;
+        agentsGrid.appendChild(card);
+      });
+    }
+
+    function resetDashboard() {
+      resultCard.style.display = 'none';
+      loadingCard.style.display = 'none';
+      dropzone.style.display = 'block';
+      fileInput.value = '';
+    }
+  </script>
+</body>
+</html>
