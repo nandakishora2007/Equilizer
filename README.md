@@ -1,8 +1,36 @@
-<div align='center'><h3>Equilizer<h3></h3><hr></div>
-IES Hackathon 2026.<br>
-Link to the problem statements : https://neurobots.in/dashboard/hackathon<br>
-Team Members : * [Ihan Mohammed A] [https://github.com/Ihan-pixel]
-              * [Jeffrin Jos] [https://github.com/JeffrinJos]
-              * Me[https://github.com/nandakishora2007]
+<div align="center">
 
-Problem Statement : " Real-Time AI-Powered Deepfake, Synthetic Media & Digital Identity Verification Platform " 
+# Equilizer
+
+### IES Hackathon 2026
+
+</div>
+
+---
+
+## 🔗 Problem Statement
+
+**Real-Time AI-Powered Deepfake, Synthetic Media & Digital Identity Verification Platform**
+
+View the hackathon problem statements:
+https://neurobots.in/dashboard/hackathon
+
+---
+
+## 👥 Team Members
+
+* **Ihan Mohammed A** — [GitHub](https://github.com/Ihan-pixel)
+* **Jeffrin Jos** — [GitHub](https://github.com/JeffrinJos)
+* **Nandakishor A** — [GitHub](https://github.com/nandakishora2007)
+
+---
+
+## 📌 Problem Statement
+
+> **Real-Time AI-Powered Deepfake, Synthetic Media & Digital Identity Verification Platform**
+
+---
+
+## 🏆 Hackathon
+
+**IES Hackathon 2026**
